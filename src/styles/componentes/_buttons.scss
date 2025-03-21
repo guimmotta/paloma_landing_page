@@ -1,0 +1,15 @@
+@use '../variables.scss';
+
+.button {
+    padding: 16px;
+    margin: 16px 0;
+    background-color: variables.$blue;
+    color: variables.$textColor;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 32px;
+
+    &__what {
+        margin: 0 4px;
+    }
+}

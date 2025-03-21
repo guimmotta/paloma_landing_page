@@ -1,0 +1,68 @@
+@use 'variables';
+
+.cards {
+    padding: 48px 0;
+
+
+    &--image-left {
+        .container {
+            flex-direction: row-reverse;
+        }
+    }
+
+    &--image-right {
+        background-color: variables.$textColor;
+    }
+
+    .container {
+        display: flex;
+        gap: 40px;
+    }
+
+    &__image {
+        max-width: 360px;
+        border-radius: 20px;
+    }
+
+    &__detail {
+
+        &__title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 16px;
+            color: variables.$blue;
+        }
+
+        &__description {
+            line-height: 22px;
+            padding-bottom: 64px;
+        }
+    }
+
+    @media (max-width:640px) {
+        .container {
+            display: block;
+        }
+
+        &__detail {
+
+            &__description {
+                padding-bottom: 32px;
+            }
+        }
+
+        .button {
+            padding: 8px;
+        }
+
+        &__image {
+            width: 100%;
+            margin-top: 32px;
+        }
+
+        &__details {
+        margin-right: 0;
+        margin-bottom: 16px;
+        }
+    }
+}
