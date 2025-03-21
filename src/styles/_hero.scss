@@ -2,9 +2,10 @@
 
 .hero {
     padding: 136px 0;
-    background-image: url(../images/setup.jpg);
+    background-image: url(../images/fundo.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: 50% 90%;
 
     &__logo {
         display: block;

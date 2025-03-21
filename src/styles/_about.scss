@@ -1,0 +1,64 @@
+@use 'variables';
+
+.about {
+    padding: 64px 0;
+
+    .container {
+        display: flex;
+        gap: 40;
+    }
+
+    &__image {
+        max-width: 360px;
+        border-radius: 20px;
+    }
+
+    &__detail {
+
+        &__title {
+            @each $property, $value in variables.$title {
+                #{$property}: $value;
+                margin: 0;
+                color: variables.$blue;
+            }
+        }
+
+        &__description {
+            @each $property, $value in variables.$description {
+                #{$property}: $value;
+                font-size: 14px;
+                line-height: 16px;
+                margin: 0;
+                margin-bottom: 48px;
+                color: variables.$blue;
+            }
+        }
+    }
+
+    @media (max-width:640px) {
+        .container {
+            display: block;
+        }
+
+        &__detail {
+
+            &__description {
+                padding-bottom: 32px;
+            }
+        }
+
+        .button {
+            padding: 8px;
+        }
+
+        &__image {
+            width: 100%;
+            margin-top: 32px;
+        }
+
+        &__detail {
+        margin-right: 0;
+        margin-bottom: 16px;
+        }
+    }
+}
