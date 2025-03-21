@@ -1,3 +1,26 @@
 $blue: #192a56;
 $pink: #fd79a8;
 $textColor: #fff;
+
+$title: (
+padding: 16px,
+margin: 32px 0,
+font-size: 40px,
+line-height: 40px,
+font-weight: 800,
+text-align: left,
+color: $pink,
+background-color: $textColor,
+border-radius: 20px,
+);
+
+$text: (
+    padding: 16px,
+    margin: 16px 0,
+    font-size: 24px,
+    line-height: 28px,
+    font-weight: 800,
+    text-align: left,
+    background-color: $textColor,
+    border-radius: 20px,
+);

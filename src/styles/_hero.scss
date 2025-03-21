@@ -1,8 +1,7 @@
 @use 'variables';
 
 .hero {
-    padding-top: 104px;
-    padding-bottom: 104px;
+    padding: 136px 0;
     background-image: url(../images/setup.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -10,30 +9,21 @@
     &__logo {
         display: block;
         margin: 0 auto;
-        height: 80px;
+        height: 100px;
+        background-color: variables.$textColor;
+        border-radius: 50px;
     }
 
-    &__title{
-        padding: 16px;
-        margin: 64px 0;
-        font-size: 40px;
-        line-height: 56px;
-        font-weight: 800;
-        text-align: left;
-        color: variables.$pink;
-        background-color: variables.$textColor;
-        border-radius: 20px;
+    &__title {
+        @each $property, $value in variables.$title {
+            #{$property}: $value;
+        }
     }
 
-    &__text{
-        padding: 16px;
-        margin: 64px 0;
-        font-size: 24px;
-        line-height: 28px;
-        font-weight: 800;
-        text-align: left;
-        background-color: variables.$textColor;
-        border-radius: 20px;
+    &__text {
+        @each $property, $value in variables.$text {
+            #{$property}: $value;
+        }
     }
 
     @media (max-width: 640px) {

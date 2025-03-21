@@ -1,0 +1,20 @@
+@use 'variables';
+
+.info {
+    padding: 64px 0;
+
+    &__title {
+        @each $property, $value in variables.$title {
+            #{$property}: $value;
+        }
+    }
+
+    &__list {
+        list-style: none;
+        &__item {
+            @each $property, $value in variables.$text {
+                #{$property}: $value;
+            }
+        }
+    }
+}
