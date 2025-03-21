@@ -1,0 +1,44 @@
+@use 'variables';
+
+.info1 {
+    text-align: center;
+    padding: 64px;
+
+    background-color: variables.$blue;
+
+    .info__title {
+        background-color: transparent;
+        color: variables.$textColor1;
+        text-align: center;
+
+        .span {
+            color: variables.$textColor2
+        }
+    }
+    .button {
+        color: variables.$blue;
+        background-color: variables.$textColor1;
+
+        &:hover {
+            background-color: variables.$pink;
+        }
+    }
+}
+
+#info1 {
+    padding: 0px;
+    margin: 16px;
+    color: variables.$pink;
+    background-color: transparent;
+    text-align: center;
+}
+
+#info2 {
+    padding: 0px;
+    margin-left: 16px;
+    font-size: 16px;
+    font-weight: 500;
+    color: variables.$textColor1;
+    background-color: transparent;
+    text-align: center;
+}

@@ -11,9 +11,16 @@
 
     &__list {
         list-style: none;
+
         &__item {
             @each $property, $value in variables.$text {
                 #{$property}: $value;
+            }
+            
+            &__subitem {
+                @each $property, $value in variables.$description {
+                    #{$property}: $value;
+                }
             }
         }
     }

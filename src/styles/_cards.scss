@@ -19,6 +19,12 @@
         gap: 40px;
     }
 
+    &__title {
+        @each $property, $value in variables.$title {
+            #{$property}: $value;
+        }
+        margin: 32px auto 64px auto;
+    }
     &__image {
         max-width: 360px;
         border-radius: 20px;
