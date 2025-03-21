@@ -1,6 +1,8 @@
-$blue: #192a56;
+$blue: #22376a;
+$blueLight:#2f4a89;
 $pink: #fd79a8;
-$textColor: #fff;
+$textColor1: #fff;
+$textColor2: $pink;
 
 $title: (
 padding: 16px,
@@ -10,7 +12,7 @@ line-height: 40px,
 font-weight: 800,
 text-align: left,
 color: $pink,
-background-color: $textColor,
+background-color: $textColor1,
 border-radius: 20px,
 );
 
@@ -21,6 +23,18 @@ $text: (
     line-height: 28px,
     font-weight: 800,
     text-align: left,
-    background-color: $textColor,
+    background-color: $textColor1,
+    border-radius: 20px,
+);
+
+$description: (
+    padding: 16px,
+    margin: 12px 0,
+    font-size: 18px,
+    line-height: 20px,
+    font-weight: 800,
+    text-align: left,
+    background-color: $textColor1,
+    color: $textColor2,
     border-radius: 20px,
 );

@@ -1,7 +1,7 @@
 @use 'variables';
 
 .cards {
-    padding: 48px 0;
+    padding: 64px 0;
 
 
     &--image-left {
@@ -11,7 +11,7 @@
     }
 
     &--image-right {
-        background-color: variables.$textColor;
+        background-color: variables.$textColor1;
     }
 
     .container {
@@ -26,16 +26,16 @@
 
     &__detail {
 
-        &__title {
-            font-size: 24px;
-            font-weight: bold;
-            margin-bottom: 16px;
-            color: variables.$blue;
+        &__text {
+            @each $property, $value in variables.$text {
+                #{$property}: $value;
+            }
         }
 
         &__description {
-            line-height: 22px;
-            padding-bottom: 64px;
+            @each $property, $value in variables.$description {
+                #{$property}: $value;
+            }
         }
     }
 
