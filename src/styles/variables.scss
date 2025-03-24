@@ -2,7 +2,6 @@ $blue: #22376a;
 $blueLight:#2f4a89;
 $pink: #fd79a8;
 $textColor1: #fff;
-$textColor2: $pink;
 
 $title: (
 padding: 16px,
@@ -24,6 +23,7 @@ $text: (
     font-weight: 800,
     text-align: left,
     background-color: $textColor1,
+    color: $pink,
     border-radius: 20px,
 );
 
@@ -35,6 +35,6 @@ $description: (
     font-weight: 800,
     text-align: left,
     background-color: $textColor1,
-    color: $textColor2,
+    color: $pink,
     border-radius: 20px,
 );

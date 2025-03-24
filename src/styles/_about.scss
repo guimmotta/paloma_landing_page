@@ -33,13 +33,14 @@
                 font-size: 14px;
                 line-height: 16px;
                 margin: 0;
-                margin-bottom: 48px;
                 color: variables.$blue;
             }
         }
     }
 
     @media (max-width:640px) {
+        padding: 40px 0;
+
         .container {
             display: block;
         }
@@ -62,7 +63,6 @@
 
         &__detail {
         margin-right: 0;
-        margin-bottom: 16px;
         }
     }
 }

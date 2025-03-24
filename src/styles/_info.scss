@@ -12,15 +12,29 @@
     &__list {
         list-style: none;
 
-        &__item {
+        &-text {
             @each $property, $value in variables.$text {
                 #{$property}: $value;
             }
-            
-            &__subitem {
-                @each $property, $value in variables.$description {
-                    #{$property}: $value;
-                }
+        }
+    }
+
+    @media (max-width: 640px) {
+        padding: 40px 0;
+        
+        &__title {
+            font-size: 22px;
+            line-height: 24px;
+            margin: 24px 0;
+        }
+        
+        &__list {
+        
+            &-text {
+                font-size: 18px;
+                line-height: 22px;
+                margin: 12px 0;
+                padding: 12px 0;
             }
         }
     }

@@ -22,7 +22,7 @@
         @each $property, $value in variables.$title {
             #{$property}: $value;
         }
-        margin: 32px auto 64px auto;
+        margin: 32px auto;
     }
     &__image {
         max-width: 360px;
@@ -35,6 +35,7 @@
             @each $property, $value in variables.$text {
                 #{$property}: $value;
             }
+            color: variables.$blue;
         }
 
         &__description {
@@ -44,7 +45,17 @@
         }
     }
 
-    @media (max-width:640px) {
+    @media (max-width: 640px) {
+        padding: 40px 0;
+
+        &__title {
+            font-size: 22px;
+            line-height: 24px;
+            margin: 24px 0;
+            padding: 12px 0;
+        }
+
+        
         .container {
             display: block;
         }
@@ -52,7 +63,16 @@
         &__detail {
 
             &__description {
-                padding-bottom: 32px;
+                font-size: 16px;
+                margin: 12px 0;
+                padding: 12px 0;
+            }
+
+            &__text {
+                font-size: 18px;
+                line-height: 22px;
+                margin: 12px 0;
+                padding: 12px 0;
             }
         }
 

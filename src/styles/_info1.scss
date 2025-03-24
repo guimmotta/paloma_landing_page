@@ -2,7 +2,7 @@
 
 .info1 {
     text-align: center;
-    padding: 64px;
+    padding: 64px 0;
 
     background-color: variables.$blue;
 
@@ -12,7 +12,7 @@
         text-align: center;
 
         .span {
-            color: variables.$textColor2
+            color: variables.$pink;
         }
     }
     .button {
@@ -23,6 +23,22 @@
             background-color: variables.$pink;
         }
     }
+
+    @media (max-width: 640px) {
+        padding: 40px 0;
+
+        &__title {
+            font-size: 22px;
+            line-height: 24px;
+            margin: 24px 0;
+        }
+
+        &__text {
+            font-size: 18px;
+            line-height: 22px;
+            margin: 24px 0;
+        }
+    }
 }
 
 #info1 {
@@ -31,10 +47,11 @@
     color: variables.$pink;
     background-color: transparent;
     text-align: center;
+    font-weight: 500;
 }
 
 #info2 {
-    padding: 0px;
+    padding: 4px 0;
     margin-left: 16px;
     font-size: 16px;
     font-weight: 500;
