@@ -7,7 +7,7 @@ $title: (
 padding: 16px,
 margin: 32px 0,
 font-size: 40px,
-line-height: 40px,
+line-height: 50px,
 font-weight: 800,
 text-align: left,
 color: $pink,
@@ -16,25 +16,25 @@ border-radius: 20px,
 );
 
 $text: (
-    padding: 16px,
+    padding: 12px,
     margin: 16px 0,
     font-size: 24px,
-    line-height: 28px,
+    line-height: 34px,
     font-weight: 800,
     text-align: left,
-    background-color: $textColor1,
     color: $pink,
+    background-color: $textColor1,
     border-radius: 20px,
 );
 
 $description: (
     padding: 16px,
     margin: 12px 0,
-    font-size: 18px,
+    font-size: 16px,
     line-height: 20px,
     font-weight: 800,
     text-align: left,
-    background-color: $textColor1,
     color: $pink,
+    background-color: $textColor1,
     border-radius: 20px,
 );

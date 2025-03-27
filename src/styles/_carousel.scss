@@ -1,0 +1,55 @@
+@use 'variables';
+
+.carousel {
+    text-align: center;
+    padding: 64px 0;
+    background-color: variables.$blue;
+
+    &__title {
+        @each $property, $value in variables.$title {
+            #{$property}: $value;
+        }
+
+        background-color: transparent;
+        color: variables.$textColor1;
+
+        .span {
+            color: variables.$pink;
+        }
+    }
+}
+
+.swiper {
+    width: 100%;
+    max-width: 900px;
+
+    .pink {
+        color: variables.$pink;
+        opacity: 1;
+    }
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: auto ;
+    margin-bottom: auto;
+}
+
+.swiper-slide img {
+    width: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.swiper-pagination-bullet {
+    background-color: variables.$pink !important;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: variables.$pink !important;
+}
